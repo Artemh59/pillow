@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+    <html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/favicon.png" type="image/x-icon">
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Massage Pillow</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <p class="nav__logo">
+                </p>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Характеристики</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Комплект</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Відгуки</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="img/product_front.jpeg" alt="" class="home__img" id="buy">
+                    </div>
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Масажна</h1>
+                            <h2 class="home__subtitle">подушка</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Опис</h3>
+                            <p class="home__description">
+                                Сучасна масажна подушка ідеально підійде всім, хто відчуває м'язовий дискомфорт. 
+                                Досить одного сеансу в день, щоб звільнитися від напруги і болю в напружених м'язах після важкого, 
+                                напруженого дня. Регулярне використання масажера дозволяє поліпшити роботу всього організму. 
+                                Апарат ідеально підходить для масажу шиї, плечей, а також спини, стоп, ніг або живота. Підходить 
+                                для виконання масажу в будь-якому місці, наприклад, вдома, в офісі або в машині.
+                            </p>
+                            <button class="button button--flex" id="show-form">
+                                <span class="button--flex">
+                                    <i class="ri-shopping-bag-line button__icon"></i></i> Придбати
+                                </span>
+                                <span class="home__price">₴599</span>
+                            </button>
+                        </div>
+                        <div class="popup">
+                            <div class="close-btn">&times;</div>
+                            <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form">
+                                <input type="hidden" name="access_key" value="563c1227-d829-4abb-8607-28d29b47cb95">
+
+                                <h2>Оформити замовлення</h2>
+                                <div class="form-element">
+                                    <label for="text">Ім'я</label>
+                                    <input type="text" id="name" name="name" placeholder="Ім'я" required>
+                                </div>
+                                <div class="form-element">
+                                    <label for="text">Прізвище</label>
+                                    <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
+                                </div>
+                                <div class="form-element">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder='Вкажіть всій email' required>
+                                </div>
+                                <div class="form-element">
+                                    <button type='submit'>Замовити</button>
+                                </div> 
+                                <div class="form-element">
+                                    <div id="result"></div>
+                                </div> 
+                            </from>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SPECS ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Характеристики</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+                        <div class="specs__data">
+                            <h3 class="specs__title">Якість</h3>
+                            <span class="specs__subtitle">Найкраща дихаюча тканина</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <h3 class="specs__title">Таймер</h3>
+                            <span class="specs__subtitle">Для вашої зручності є встроєний таймер</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <h3 class="specs__title">Режими</h3>
+                            <span class="specs__subtitle">
+                                Чотири 3D масажні головки в прямому <br> та зворотному режимах <br> для розігріву та розминання шийний відділ хребта
+                            </span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <h3 class="specs__title">Портативність</h3>
+                            <span class="specs__subtitle">Підходить 
+                                для виконання масажу в будь-якому місці, <br> наприклад, вдома, в офісі або в машині.</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="img/feature2.jpeg" alt="" class="specs__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CASE ===============-->
+            <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Комплект</h2>
+
+                <div class="case__container container grid">
+                    <div>
+                        <img src="img/product_back.jpeg" alt="" class="case__img">
+                    </div>
+
+                    <div class="case__data">
+                        <p class="case__description">
+                            В комплекті ви знайдете все необхідне для миттєвого використання, 
+                            та початку поліпшення вашого здоровья, ажде досить всього одного сеансу на день, 
+                            щоб вже за тиждень перестати відчувати біль.
+                        </p>
+                        <a href="#buy" class="button button--flex">
+                            <span class="button--flex">
+                                <i class="ri-shopping-bag-line button__icon"></i></i> Придбати
+                            </span>
+                            <span class="home__price">₴599</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== PRODUCTS ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                    Відгуки
+                </h2>
+                <div class="reviews">
+                    <div class="review">
+                      <img src="img/rewiews/photo_2025-01-11 13.38.35.jpeg" alt="User" class="review-img" />
+                      <div class="review-content">
+                        <h4 class="review-name">Вікторія Мельник</h4>
+                        <p class="review-comment">
+                            Масажна подушка – це справжня знахідка для мене. 
+                            Вона допомогла зняти біль у спині після важкого дня. Рекомендую всім!
+                        </p>
+                      </div>
+                    </div>
+                  
+                    <div class="review">
+                      <img src="img/rewiews/photo_2025-01-11 13.38.34.jpeg" alt="User" class="review-img" />
+                      <div class="review-content">
+                        <h4 class="review-name">Ігор Коваленко</h4>
+                        <p class="review-comment">
+                            Цей продукт чудово знімає напругу та біль у шиї. 
+                            Прекрасне рішення для тих, хто проводить багато часу за комп'ютером.
+                        </p>
+                      </div>
+                    </div>
+                  
+                    <div class="review">
+                      <img src="img/rewiews/photo_2025-01-11 13.38.38.jpeg" alt="User" class="review-img" />
+                      <div class="review-content">
+                        <h4 class="review-name">Сергій Пономаренко</h4>
+                        <p class="review-comment">
+                            Просто чудово! Легко користуватись, а головне – ефективно знімає 
+                            біль у спині та шиї. Рекомендую!
+                        </p>
+                      </div>
+                    </div>
+                  
+                    <div class="review">
+                      <img src="img/rewiews/photo_2025-01-11 13.38.42.jpeg" alt="User" class="review-img" />
+                      <div class="review-content">
+                        <h4 class="review-name">Ірина Шевченко</h4>
+                        <p class="review-comment">
+                            Цей продукт зменшив мої постійні болі у спині. Користуюсь щодня, і вже відчуваю помітне полегшення.
+                        </p>
+                      </div>
+                    </div>
+                  </div>                
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section" style='display: flex; justify-content: center;'>
+            <!-- <div class="footer__container container grid">
+                 <a href="#" class="footer__logo">
+                    <img src="https://github.com/bedimcode/responsive-landing-page-headphones/blob/main/assets/img/logo.png?raw=true" alt="">
+                </a>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earbuds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form>
+    
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+                </div>                 
+            </div> -->
+
+            <p class="footer__copy">
+                <p>©MassagePillow. All right reserved</p>
+            </p>
+        </footer>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
