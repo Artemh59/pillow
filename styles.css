@@ -631,20 +631,6 @@ img {
   }
 }
 
-@media screen and (min-width: 380px) {
-  /* .specs__img {
-    width: 180px;
-    height: 170px;
-  } */
-}
-
-@media screen and (min-width: 415px) {
-  /* .specs__img {
-    width: 210px;
-    height: 170px;
-  } */
-}
-
 @media screen and (min-width: 450px) {
   .specs__img {
     visibility: hidden;
@@ -917,4 +903,4 @@ img {
     font-size: 14px;
     color: #b0b0b0;
   }
-}
+}}
