@@ -59,7 +59,7 @@
                             <h2 class="home__subtitle">подушка</h2>
                         </div>
 
-                        <div class="home__footer">
+                        <div class="home__footer" id="home__footer">
                             <h3 class="home__title-description">Опис</h3>
                             <p class="home__description">
                                 Сучасна масажна подушка ідеально підійде всім, хто відчуває м'язовий дискомфорт. 
@@ -68,12 +68,7 @@
                                 Апарат ідеально підходить для масажу шиї, плечей, а також спини, стоп, ніг або живота. Підходить 
                                 для виконання масажу в будь-якому місці, наприклад, вдома, в офісі або в машині.
                             </p>
-                            <button class="button button--flex" id="show-form">
-                                <span class="button--flex">
-                                    <i class="ri-shopping-bag-line button__icon"></i></i> Придбати
-                                </span>
-                                <span class="home__price">₴599</span>
-                            </button>
+                            
                         </div>
                         <div class="popup">
                             <div class="close-btn">&times;</div>
@@ -86,12 +81,8 @@
                                     <input type="text" id="name" name="name" placeholder="Ім'я" required>
                                 </div>
                                 <div class="form-element">
-                                    <label for="text">Прізвище</label>
-                                    <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
-                                </div>
-                                <div class="form-element">
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" name="email" placeholder='Вкажіть всій email' required>
+                                    <label for="phone">Номер телефону</label>
+                                    <input type="text" id="email" name="phone" placeholder="Вкажіть всій номер телефону для зв'язку" required>
                                 </div>
                                 <div class="form-element">
                                     <button type='submit'>Замовити</button>
@@ -103,6 +94,12 @@
                         </div>
                     </div>
                 </div>
+                <button class="button button--flex" id="show-form">
+                    <span class="button--flex">
+                        <i class="ri-shopping-bag-line button__icon"></i></i> Придбати
+                    </span>
+                    <span class="home__price">₴599</span>
+                </button>
             </section>
 
             <!--=============== SPECS ===============-->
@@ -156,7 +153,7 @@
                             та початку поліпшення вашого здоровья, ажде досить всього одного сеансу на день, 
                             щоб вже за тиждень перестати відчувати біль.
                         </p>
-                        <a href="#buy" class="button button--flex">
+                        <a href="#home__footer" class="button button--flex">
                             <span class="button--flex">
                                 <i class="ri-shopping-bag-line button__icon"></i></i> Придбати
                             </span>

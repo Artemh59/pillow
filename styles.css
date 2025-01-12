@@ -375,26 +375,28 @@ img {
 
 /*=============== BUTTONS ===============*/
 .button {
-  display: inline-block;
-  background-color: var(--black-color);
-  color: var(--white-color);
+  display: block;
+  background-color: #000;
+  color: var(--black-color);
   padding: 1rem 1.25rem;
   border-radius: .5rem;
   transition: .3s;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .button:hover {
-  background-color: var(--black-color-alt);
-}
-
-.button__icon {
-  font-size: 1.2rem;
+  background-color: #444;
 }
 
 .button--flex {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   column-gap: .75rem;
+  width: 100%;
 }
 
 /*=============== SPECS ===============*/
@@ -433,7 +435,7 @@ img {
   width: 250px;
   position: absolute;
   top: 2rem;
-  right: -4rem;
+  right: -44rem;
 }
 
 /*=============== CASE ===============*/
@@ -568,10 +570,18 @@ img {
     top: -13rem; 
   }
   .home__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+  .home__subtitle {
+    font-size: 4rem;
+  }
+  .home__title-description {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
   .home__description {
-    font-size: var(--small-font-size);
+    font-size: 1.4rem;
   }
   .specs__img {
     width: 170px;
@@ -597,29 +607,47 @@ img {
     padding: 20px;
     text-align: center;
     width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .specs__img {
+    visibility: hidden;
+  }
+
+  .specs__title {
+    font-size: 25px;
+  }
+
+  .specs__subtitle {
+    font-size: 20px;
   }
   
+  .review-name {
+    font-size: 18px;
+  }
 
+  .review-comment {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 380px) {
-  .specs__img {
+  /* .specs__img {
     width: 180px;
     height: 170px;
-  }
+  } */
 }
 
 @media screen and (min-width: 415px) {
-  .specs__img {
+  /* .specs__img {
     width: 210px;
     height: 170px;
-  }
+  } */
 }
 
 @media screen and (min-width: 450px) {
   .specs__img {
-    width: 240px;
-    height: 170px;
+    visibility: hidden;
   }
 
   .popup.active {
@@ -709,15 +737,6 @@ img {
   .review-img {
     height: 60%;
   }
-
-  .review-name {
-    font-size: 14px;
-  }
-
-  .review-comment {
-    font-size: 12px;
-  }
-}
 
 @media screen and (min-width: 767px) {
   .popup.active {
