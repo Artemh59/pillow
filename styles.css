@@ -4,18 +4,19 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  --hue-color: 206;
-  --black-color: hsl(var(--hue-color), 4%, 4%);
-  --black-color-alt: hsl(var(--hue-color), 4%, 8%);
-  --title-color: hsl(var(--hue-color), 4%, 95%);
-  --text-color: hsl(var(--hue-color), 4%, 75%);
-  --text-color-light: hsl(var(--hue-color), 4%, 65%);
-  --white-color: #FFF;
-  --body-color: hsl(var(--hue-color), 4%, 6%);
-  --container-color: hsl(var(--hue-color), 4%, 10%);
-  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
-  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
-  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+--hue-color: 206;
+--black-color: hsl(var(--hue-color), 4%, 96%);
+--black-color-alt: hsl(var(--hue-color), 4%, 92%);
+--title-color: hsl(var(--hue-color), 4%, 5%);
+--text-color: hsl(var(--hue-color), 4%, 25%);
+--text-color-light: hsl(var(--hue-color), 4%, 35%);
+--white-color: #000;
+--body-color: hsl(var(--hue-color), 4%, 94%);
+--container-color: hsl(var(--hue-color), 4%, 90%);
+--text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 76%), hsl(var(--hue-color), 4%, 92%));
+--scroll-thumb-color: hsl(var(--hue-color), 4%, 84%);
+--scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 80%);
+
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 5rem;
