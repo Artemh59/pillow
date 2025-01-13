@@ -87,27 +87,29 @@
                             </p>
                             
                         </div>
-                        <div class="popup">
-                            <div class="close-btn">&times;</div>
-                            <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form">
-                                <input type="hidden" name="access_key" value="563c1227-d829-4abb-8607-28d29b47cb95">
-
-                                <h2>Оформити замовлення</h2>
-                                <div class="form-element">
-                                    <label for="text">Ім'я</label>
-                                    <input type="text" id="name" name="name" placeholder="Ім'я" required>
-                                </div>
-                                <div class="form-element">
-                                    <label for="phone">Номер телефону</label>
-                                    <input type="text" id="email" name="phone" placeholder="Вкажіть всій номер телефону для зв'язку" required>
-                                </div>
-                                <div class="form-element">
-                                    <button type='submit'>Замовити</button>
-                                </div> 
-                                <div class="form-element">
-                                    <div id="result"></div>
-                                </div> 
-                            </from>
+                        <div class="popup-overlay" id="popup-overlay">
+                            <div class="popup">
+                                <div class="close-btn" id="close-btn">&times;</div>
+                                <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form">
+                                    <input type="hidden" name="access_key" value="563c1227-d829-4abb-8607-28d29b47cb95">
+    
+                                    <h2>Оформити замовлення</h2>
+                                    <div class="form-element">
+                                        <label for="text">Ім'я</label>
+                                        <input type="text" id="name" name="name" placeholder="Ім'я" required>
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="phone">Номер телефону</label>
+                                        <input type="text" id="email" name="phone" placeholder="Вкажіть всій номер телефону для зв'язку" required>
+                                    </div>
+                                    <div class="form-element">
+                                        <button type='submit'>Замовити</button>
+                                    </div> 
+                                    <div class="form-element">
+                                        <div id="result"></div>
+                                    </div> 
+                                </from>
+                            </div>
                         </div>
                     </div>
                 </div>

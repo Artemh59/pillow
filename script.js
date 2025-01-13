@@ -84,14 +84,20 @@ sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
 
 /*=============== BUY BUTTON ===============*/
-document.querySelectorAll("#show-form").forEach(function (button) {
+document.querySelectorAll("#show-form").forEach(button => {
     button.addEventListener("click", function () {
-        document.querySelector(".popup").classList.add("active");
+        document.querySelector("#popup-overlay").style.display = "flex";
     });
 });
 
-document.querySelector(".popup .close-btn").addEventListener("click", function() {
-    document.querySelector(".popup").classList.remove("active");
+document.querySelector("#close-btn").addEventListener("click", function () {
+    document.querySelector("#popup-overlay").style.display = "none";
+});
+
+document.querySelector("#popup-overlay").addEventListener("click", function (e) {
+    if (e.target === this) {
+        this.style.display = "none";
+    }
 });
 
 /*=============== FORM ===============*/
