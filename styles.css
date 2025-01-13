@@ -399,6 +399,33 @@ img {
   width: 100%;
 }
 
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.old-price {
+  font-size: 2rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.home__price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.discount {
+  font-size: 2rem;
+  color: #e63946;
+  font-weight: bold;
+  background-color: #ffe6e6;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
 /*=============== SPECS ===============*/
 .specs__container {
   position: relative;
@@ -458,6 +485,8 @@ img {
   margin-bottom: var(--mb-1-5);
   line-height: var(--text-line-height);
 }
+
+/*=============== REVIEWS ===============*/
 
 .reviews {
   display: flex;
@@ -552,6 +581,31 @@ img {
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (min-width: 300px) {
+
+  .button__icon {
+    display: none;
+  }
+
+  .price-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .old-price {
+    font-size: 1.3rem;
+    text-decoration: line-through;
+  }
+  
+  .home__price {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .discount {
+    font-size: 1.3rem;
+  }
+
   .popup.active {
     top: 100%;
     left: 4%;
@@ -632,6 +686,24 @@ img {
 }
 
 @media screen and (min-width: 450px) {
+
+  .old-price {
+    font-size: 1.9rem;
+    text-decoration: line-through;
+  }
+  
+  .home__price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .discount {
+    font-size: 1.8rem;
+  }
+
+  .button__icon {
+    display:flex;
+  }
   .specs__img {
     visibility: hidden;
   }

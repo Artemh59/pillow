@@ -84,8 +84,10 @@ sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
 
 /*=============== BUY BUTTON ===============*/
-document.querySelector("#show-form").addEventListener("click", function() {
-    document.querySelector(".popup").classList.add("active");
+document.querySelectorAll("#show-form").forEach(function (button) {
+    button.addEventListener("click", function () {
+        document.querySelector(".popup").classList.add("active");
+    });
 });
 
 document.querySelector(".popup .close-btn").addEventListener("click", function() {
